@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #FF8000;
+  --color-brand-orange-light: #FF9933;
+  --color-brand-purple: #8B1E51; /* Purple Berry */
+  --color-brand-purple-dark: #631238;
+  
+  --font-sans: "Nunito Sans", "Avenir", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Nunito Sans", "Avenir", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  /* Bypasses Android/Samsung Forced Dark Mode auto-inversion */
+  .bg-brand-orange-safe {
+    background-image: linear-gradient(to right, var(--color-brand-orange), var(--color-brand-orange));
+    color: #ffffff;
+  }
+  .bg-brand-orange-safe:hover {
+    background-image: linear-gradient(to right, var(--color-brand-orange-light), var(--color-brand-orange-light));
+  }
+  .text-brand-purple-safe {
+    background-image: linear-gradient(to right, var(--color-brand-purple), var(--color-brand-purple));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .text-brand-orange-safe {
+    background-image: linear-gradient(to right, var(--color-brand-orange), var(--color-brand-orange));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
