@@ -129,11 +129,11 @@ export function Solution() {
             {[...Array(2)].map((_, loopIndex) => (
               <div key={loopIndex} className="flex gap-6 px-3">
                 {[
-                  "/images/Before & After.jpg",
-                  "/images/Before & After2.jpg",
-                  "/images/Before & After3.jpg",
-                  "/images/Before & After4.jpg",
-                  "/images/Before & After5.jpg"
+                  "/images/portfolio1.jpg",
+                  "/images/portfolio2.jpg",
+                  "/images/portfolio3.jpg",
+                  "/images/portfolio4.jpg",
+                  "/images/portfolio5.jpg"
                 ].map((src, idx) => (
                   <div key={idx} className="w-[300px] md:w-[450px] aspect-[4/3] rounded-2xl overflow-hidden shadow-md flex-shrink-0 relative group/item">
                     <img 
