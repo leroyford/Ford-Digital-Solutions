@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
 
 export function Navbar() {
@@ -31,27 +32,27 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <a href="/" className="flex-shrink-0" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link to="/" className="flex-shrink-0" onClick={() => setIsMobileMenuOpen(false)}>
             <Logo />
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className="text-base font-bold text-slate-600 hover:text-brand-orange transition-colors"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
-            <a
-              href="/#how-to-start"
+            <Link
+              to="/#how-to-start"
               className="bg-brand-orange-safe px-6 py-2.5 rounded-full font-bold text-base transition-all shadow-md shadow-brand-orange/20 hover:shadow-lg hover:shadow-brand-orange/30 active:scale-95"
             >
               Get Started
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -79,23 +80,23 @@ export function Navbar() {
       >
         <div className="px-4 pt-2 pb-6 space-y-1 shadow-xl">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
               className="block px-3 py-4 text-base font-semibold text-slate-900 border-b border-slate-50 hover:text-brand-orange"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           <div className="pt-4">
-            <a
-              href="/#how-to-start"
+            <Link
+              to="/#how-to-start"
               onClick={() => setIsMobileMenuOpen(false)}
               className="block w-full text-center bg-brand-orange-safe px-6 py-3 rounded-xl font-medium"
             >
               Get Started Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,14 +1,9 @@
 import { motion } from 'motion/react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Logo } from './Logo';
 
-
-
-
-
-
-
-
 export function Solution() {
+  const navigate = useNavigate();
   return (
     <section className="bg-slate-50 border-y border-slate-200" id="what-we-do">
       
@@ -116,23 +111,29 @@ export function Solution() {
             <h3 className="text-2xl font-display font-bold text-brand-purple">Our Latest Menu Transformations</h3>
             <p className="text-slate-500 mt-2">Swipe to see more or click to view full gallery</p>
           </div>
-          <a href="/portfolio" className="hidden sm:inline-flex items-center text-brand-orange-safe font-bold hover:text-brand-orange transition-colors">
+          <Link to="/portfolio" className="hidden sm:inline-flex items-center text-brand-orange-safe font-bold hover:text-brand-orange transition-colors">
             View All <span className="ml-2">→</span>
-          </a>
+          </Link>
         </div>
         
         {/* Revolving Gallery (Marquee) */}
-        <div className="relative flex overflow-x-hidden group cursor-pointer" onClick={() => window.location.href = '/portfolio'}>
+        <div 
+          className="relative flex overflow-x-hidden group cursor-pointer" 
+          onClick={(e) => {
+            e.preventDefault();
+            navigate('/portfolio');
+          }}
+        >
           <div className="flex animate-[marquee_40s_linear_infinite] group-hover:[animation-play-state:paused] whitespace-nowrap">
             {/* Double the images for seamless looping */}
             {[...Array(2)].map((_, loopIndex) => (
               <div key={loopIndex} className="flex gap-6 px-3">
                 {[
-                  "/images/portfolio1.jpg",
-                  "/images/portfolio2.jpg",
-                  "/images/portfolio3.jpg",
-                  "/images/portfolio4.jpg",
-                  "/images/portfolio5.jpg"
+                  "/images/Before & After.jpg",
+                  "/images/Before & After2.jpg",
+                  "/images/Before & After3.jpg",
+                  "/images/Before & After4.jpg",
+                  "/images/Before & After5.jpg"
                 ].map((src, idx) => (
                   <div key={idx} className="w-[300px] md:w-[450px] aspect-[4/3] rounded-2xl overflow-hidden shadow-md flex-shrink-0 relative group/item">
                     <img 
@@ -151,9 +152,9 @@ export function Solution() {
         </div>
         
         <div className="mt-8 text-center sm:hidden px-4">
-           <a href="/portfolio" className="inline-flex items-center justify-center w-full bg-slate-100 text-slate-800 font-bold hover:bg-slate-200 transition-colors py-3 rounded-xl">
+           <Link to="/portfolio" className="inline-flex items-center justify-center w-full bg-slate-100 text-slate-800 font-bold hover:bg-slate-200 transition-colors py-3 rounded-xl">
             View Full Portfolio
-          </a>
+          </Link>
         </div>
       </div>
 
