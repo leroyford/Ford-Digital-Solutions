@@ -1,5 +1,5 @@
 import { Logo } from './Logo';
-import unsplash2_jpg from '../assets/unsplash2.jpg';
+
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
       {/* Background visual */}
       <div className="absolute inset-0 opacity-40 mix-blend-multiply">
         <img 
-          src={unsplash2_jpg} 
+          src="/images/unsplash2.jpg" 
           alt="Restaurant spread" 
           className="w-full h-full object-cover" 
         />

@@ -1,17 +1,17 @@
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
-import portfolio1_jpg from '../assets/portfolio1.jpg';
-import portfolio2_jpg from '../assets/portfolio2.jpg';
-import portfolio3_jpg from '../assets/portfolio3.jpg';
-import portfolio4_jpg from '../assets/portfolio4.jpg';
-import portfolio5_jpg from '../assets/portfolio5.jpg';
+
+
+
+
+
 
 const galleryImages = [
-  portfolio1_jpg,
-  portfolio2_jpg,
-  portfolio3_jpg,
-  portfolio4_jpg,
-  portfolio5_jpg
+  "/images/portfolio1.jpg",
+  "/images/portfolio2.jpg",
+  "/images/portfolio3.jpg",
+  "/images/portfolio4.jpg",
+  "/images/portfolio5.jpg"
 ];
 
 export function PortfolioPage() {

@@ -1,5 +1,5 @@
 import { X, Check } from 'lucide-react';
-import outdated_menu_jpg from '../assets/outdated-menu.jpg';
+
 
 export function Features() {
   const painPoints = [
@@ -25,7 +25,7 @@ export function Features() {
         <div className="text-center mt-16 w-full mx-auto">
           <div className="w-full mx-auto mb-10 rounded-2xl overflow-hidden shadow-xl border border-slate-100 relative group max-h-[800px]">
             <img 
-              src={outdated_menu_jpg} 
+              src="/images/outdated-menu.jpg" 
               alt="The impact of a visual menu" 
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />

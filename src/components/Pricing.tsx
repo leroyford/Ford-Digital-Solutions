@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import pricing_addons_png from '../assets/pricing-addons.png';
+
 
 export function Pricing() {
   return (
@@ -153,7 +153,7 @@ export function Pricing() {
 
           <div className="mt-16 w-full rounded-3xl overflow-hidden shadow-2xl relative group w-full mx-auto max-w-[1600px]">
             <img 
-              src={pricing_addons_png} 
+              src="/images/pricing-addons.png" 
               alt="Premium menu examples" 
               className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
             />

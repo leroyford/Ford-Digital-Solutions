@@ -1,12 +1,12 @@
 import { motion } from 'motion/react';
 import { Logo } from './Logo';
-import happy_owner_png from '../assets/happy-owner.png';
-import portfolio1_jpg from '../assets/portfolio1.jpg';
-import portfolio2_jpg from '../assets/portfolio2.jpg';
-import portfolio3_jpg from '../assets/portfolio3.jpg';
-import portfolio4_jpg from '../assets/portfolio4.jpg';
-import portfolio5_jpg from '../assets/portfolio5.jpg';
-import latest_banner_jpg from '../assets/latest-banner.jpg';
+
+
+
+
+
+
+
 
 export function Solution() {
   return (
@@ -43,7 +43,7 @@ export function Solution() {
 
           <div className="w-full md:w-7/12 relative min-h-[400px] md:min-h-[600px] overflow-hidden rounded-tl-[100px] md:rounded-tl-full bg-slate-800">
             <img 
-              src={happy_owner_png} 
+              src="/images/happy-owner.png" 
               alt="Happy restaurant owner" 
               className="absolute inset-0 w-full h-full object-cover object-center opacity-80"
             />
@@ -104,7 +104,7 @@ export function Solution() {
       {/* Banner above gallery */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <img 
-          src={latest_banner_jpg} 
+          src="/images/latest-banner.jpg" 
           alt="Boost Orders with Visual Menus" 
           className="w-full h-auto rounded-3xl shadow-2xl"
         />
@@ -128,11 +128,11 @@ export function Solution() {
             {[...Array(2)].map((_, loopIndex) => (
               <div key={loopIndex} className="flex gap-6 px-3">
                 {[
-                  portfolio1_jpg,
-                  portfolio2_jpg,
-                  portfolio3_jpg,
-                  portfolio4_jpg,
-                  portfolio5_jpg
+                  "/images/portfolio1.jpg",
+                  "/images/portfolio2.jpg",
+                  "/images/portfolio3.jpg",
+                  "/images/portfolio4.jpg",
+                  "/images/portfolio5.jpg"
                 ].map((src, idx) => (
                   <div key={idx} className="w-[300px] md:w-[450px] aspect-[4/3] rounded-2xl overflow-hidden shadow-md flex-shrink-0 relative group/item">
                     <img 

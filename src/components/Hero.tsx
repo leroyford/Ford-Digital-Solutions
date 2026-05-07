@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
-import hero1_jpg from '../assets/hero1.jpg';
-import hero2_png from '../assets/hero2.png';
+
+
 
 export function Hero() {
   return (
@@ -14,7 +14,7 @@ export function Hero() {
         className="w-full max-w-[100vw] overflow-hidden mb-12 md:mb-16"
       >
         <img 
-          src={hero1_jpg} 
+          src="/images/hero1.jpg" 
           alt="Premium Visual Menus" 
           className="w-full h-auto block"
         />
@@ -66,7 +66,7 @@ export function Hero() {
           className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl ring-1 ring-slate-900/5"
         >
           <img 
-            src={hero2_png} 
+            src="/images/hero2.png" 
             alt="Hero Menu Transformation" 
             className="w-full h-auto object-cover block"
           />

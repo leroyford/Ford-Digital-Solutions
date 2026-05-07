@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 import { X } from 'lucide-react';
-import problem1_jpg from '../assets/problem1.jpg';
-import problem2_jpg from '../assets/problem2.jpg';
-import problem3_jpg from '../assets/problem3.jpg';
+
+
+
 
 export function Problem() {
   return (
@@ -32,7 +32,7 @@ export function Problem() {
           >
             <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative group">
               <img 
-                src={problem1_jpg} 
+                src="/images/problem1.jpg" 
                 alt="Buying ingredients" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -54,7 +54,7 @@ export function Problem() {
           >
             <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative group">
               <img 
-                src={problem2_jpg} 
+                src="/images/problem2.jpg" 
                 alt="Chef cooking" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -76,7 +76,7 @@ export function Problem() {
           >
             <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative group">
               <img 
-                src={problem3_jpg} 
+                src="/images/problem3.jpg" 
                 alt="Photography studio" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />

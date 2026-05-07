@@ -1,8 +1,8 @@
 import React from 'react';
 import { UploadCloud, PenTool, FileText, Clock, UtensilsCrossed } from 'lucide-react';
 import { motion } from 'motion/react';
-import process1_jpg from '../assets/process1.jpg';
-import unsplash1_jpg from '../assets/unsplash1.jpg';
+
+
 
 export function Process() {
   const steps = [
@@ -71,7 +71,7 @@ export function Process() {
           
           <div className="mt-16 w-full rounded-3xl overflow-hidden shadow-2xl relative group mx-auto max-w-[1600px]">
             <img 
-              src={process1_jpg} 
+              src="/images/process1.jpg" 
               alt="Process example" 
               className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
             />
@@ -82,7 +82,7 @@ export function Process() {
       
       <div className="mt-32 relative bg-brand-purple overflow-hidden py-24">
         <img 
-          src={unsplash1_jpg} 
+          src="/images/unsplash1.jpg" 
           alt="Fine dining background" 
           className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-luminosity" 
         />
