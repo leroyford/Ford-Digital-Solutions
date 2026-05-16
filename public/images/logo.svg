@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5A00" />
+      <stop offset="100%" stop-color="#9d4edd" />
+    </linearGradient>
+  </defs>
+  <!-- Modern Stylized Cloche / Menu Icon -->
+  <path d="M15 35 Q30 15 45 35 M20 35 L40 35 M30 15 L30 11" fill="none" stroke="url(#primary-grad)" stroke-width="4" stroke-linecap="round" />
+  <circle cx="30" cy="9" r="2" fill="url(#primary-grad)" />
+  
+  <text x="56" y="38" font-family="sans-serif" font-weight="900" font-size="28" fill="#0f172a" letter-spacing="-0.5">
+    SeeYourMenu
+  </text>
+</svg>
