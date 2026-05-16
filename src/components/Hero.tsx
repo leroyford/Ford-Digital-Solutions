@@ -14,7 +14,7 @@ export function Hero() {
         className="w-full max-w-[100vw] overflow-hidden mb-12 md:mb-16"
       >
         <img 
-          src="/images/hero1.jpg" 
+          src="/images/Hero1.jpg" 
           alt="Premium Visual Menus" 
           className="w-full h-auto block"
         />
@@ -66,7 +66,7 @@ export function Hero() {
           className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl ring-1 ring-slate-900/5"
         >
           <img 
-            src="/images/hero2.png" 
+            src="/images/Hero2.jpg" 
             alt="Hero Menu Transformation" 
             className="w-full h-auto object-cover block"
           />

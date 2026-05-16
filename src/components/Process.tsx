@@ -71,7 +71,7 @@ export function Process() {
           
           <div className="mt-16 w-full rounded-3xl overflow-hidden shadow-2xl relative group mx-auto max-w-[1600px]">
             <img 
-              src="/images/process1.jpg" 
+              src="/images/Menuadditioonal1.png" 
               alt="Process example" 
               className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
             />

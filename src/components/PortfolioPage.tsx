@@ -7,11 +7,11 @@ import { Footer } from './Footer';
 
 
 const galleryImages = [
-  "/images/Before & After.jpg",
-  "/images/Before & After2.jpg",
-  "/images/Before & After3.jpg",
-  "/images/Before & After4.jpg",
-  "/images/Before & After5.jpg"
+  "/images/Before&After.jpg",
+  "/images/Before&After2.jpg",
+  "/images/Before&After3.jpg",
+  "/images/Before&After4.jpg",
+  "/images/Before&After5.jpg"
 ];
 
 export function PortfolioPage() {
